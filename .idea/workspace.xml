@@ -9,41 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5463e208-7480-4425-b2bf-cdb23cc16402" name="Changes" comment="is done">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/editUser.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/spring_crud/config/SpringConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring_crud/config/SpringConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/spring_crud/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring_crud/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/spring_crud/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring_crud/dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/spring_crud/dao/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring_crud/dao/UserDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/spring_crud/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring_crud/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/spring_crud/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring_crud/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/spring_crud/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/spring_crud/service/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/edit.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/users.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/new.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/addUser.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pages/show.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/spring_crud/config/SpringConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spring_crud/config/SpringConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/spring_crud/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spring_crud/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/spring-crud/WEB-INF/classes/spring_crud/config/SpringConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/spring-crud/WEB-INF/classes/spring_crud/config/SpringConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/spring-crud/WEB-INF/classes/spring_crud/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/spring-crud/WEB-INF/classes/spring_crud/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/spring-crud/WEB-INF/lib/spring-aop-5.3.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/spring-crud/WEB-INF/lib/spring-beans-5.3.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/spring-crud/WEB-INF/lib/spring-context-5.3.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/spring-crud/WEB-INF/lib/spring-core-5.3.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/spring-crud/WEB-INF/lib/spring-expression-5.3.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/spring-crud/WEB-INF/lib/spring-jcl-5.3.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/spring-crud/WEB-INF/lib/spring-web-5.3.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/spring-crud/WEB-INF/lib/spring-webmvc-5.3.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/spring-crud/WEB-INF/pages/edit.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/spring-crud/WEB-INF/pages/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/spring-crud/WEB-INF/pages/new.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/spring-crud/WEB-INF/pages/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/spring-crud/WEB-INF/pages/show.html" afterDir="false" />
-    </list>
+    <list default="true" id="5463e208-7480-4425-b2bf-cdb23cc16402" name="Changes" comment="fixed some bugs" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -204,7 +170,7 @@
       <workItem from="1629376162343" duration="8000" />
       <workItem from="1629376201717" duration="470000" />
       <workItem from="1629431467656" duration="5828000" />
-      <workItem from="1629450326267" duration="7266000" />
+      <workItem from="1629450326267" duration="7778000" />
     </task>
     <task id="LOCAL-00001" summary="is done">
       <created>1629376438271</created>
@@ -213,7 +179,14 @@
       <option name="project" value="LOCAL" />
       <updated>1629376438272</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="fixed some bugs">
+      <created>1629463427654</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1629463427654</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -233,6 +206,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="is done" />
-    <option name="LAST_COMMIT_MESSAGE" value="is done" />
+    <MESSAGE value="fixed some bugs" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed some bugs" />
   </component>
 </project>

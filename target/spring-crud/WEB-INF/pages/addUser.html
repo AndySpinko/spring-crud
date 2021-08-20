@@ -2,37 +2,33 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Edit user</title>
+    <title>Add user</title>
 </head>
 <body>
-<h2>Edit user</h2>
+<h2>add User</h2>
 <div>
-
-    <form th:action="@{/users/edit}" th:object="${user}" method="post">
-        <input type="hidden" name="id" th:value="${user.getId()}">
+    <form th:action="@{/users/add}" th:object="${user}" method="post">
         <fieldset>
-            <legend>User</legend>
+            <legend>user</legend>
             <p>
-                <label th:for="name">Name</label>
+                <label th:for="name">name</label>
                 <input type="text" name="name" th:id="name" th:value="${user.getName()}">
             </p>
             <p>
-                <label th:for="lastName">Surname</label>
+                <label th:for="lastName">surname</label>
                 <input type="text" name="lastName" th:id="lastName" th:value="${user.getLastName()}"><br/>
+
             </p>
             <p>
                 <label th:for="email">email</label>
                 <input type="text" name="email" th:id="email" th:value="${user.getEmail()}"><br/>
             </p>
-
         </fieldset>
-        <button type="submit">Save</button>
+        <button type="submit">save user</button>
     </form>
-
-
     <br/>
     <form th:action="@{/users}">
-        <button type="submit">back to list</button>
+        <button type="submit" class="btn btn-outline-danger">back to list</button>
     </form>
 </div>
 </body>
