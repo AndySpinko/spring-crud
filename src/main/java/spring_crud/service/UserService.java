@@ -5,13 +5,13 @@ import spring_crud.model.User;
 import java.util.List;
 
 public interface UserService {
+    void addUser(User user);
+
+    void deleteUser(Long id);
+
+    void editUser(User user);
+
+    User getUserById(Long id);
+
     List<User> getAllUsers();
-
-    void save(User user);
-
-    User show(int id);
-
-    void update(User user);
-
-    void delete(int id);
 }

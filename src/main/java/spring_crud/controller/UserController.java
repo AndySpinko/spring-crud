@@ -2,6 +2,7 @@ package spring_crud.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.*;
 import spring_crud.model.User;
@@ -11,52 +12,65 @@ import spring_crud.service.UserService;
 import java.util.List;
 
 @Controller
-@RequestMapping("/users")
 public class UserController {
-
-    @Autowired
     private UserService userService;
 
-    @GetMapping()
-    public String showAllUsers(ModelMap model) {
-        List<User> list = userService.getAllUsers();
-        model.addAttribute("allUsers", list);
-        return "index";
+    @Autowired
+    public void setUserService(UserService userService) {
+        this.userService = userService;
     }
 
+    @GetMapping(value = "/test")
+    public String test() {
+        return "test";
+    }
 
-    @GetMapping("/{id}")
-    public String show(@PathVariable("id") Integer id, ModelMap modelMap) {
-        modelMap.addAttribute("user", userService.show(id));
+    @GetMapping(value = "/")
+    public String welcome() {
+        return "redirect:/users";
+    }
+
+    @GetMapping(value = "users")
+    public String allUsers(ModelMap model) {
+        model.addAttribute("users", userService.getAllUsers());
+        return "users";
+    }
+
+    @GetMapping(value = "users/add")
+    public String addUser(Model model) {
+        User user = new User();
+        model.addAttribute("user", user);
+        return "addUser";
+    }
+
+    @PostMapping(value = "users/add")
+    public String addUser(@ModelAttribute("user") User user) {
+        userService.addUser(user);
+        return "redirect:/users";
+    }
+
+    @GetMapping(value = "users/edit/{id}")
+    public String editUser(ModelMap model, @PathVariable("id") Long id) {
+        User user = userService.getUserById(id);
+        model.addAttribute("user", user);
+        return "editUser";
+    }
+
+    @PostMapping(value = "users/edit")
+    public String edit(@ModelAttribute("user") User user) {
+        userService.editUser(user);
+        return "redirect:/users";
+    }
+
+    @GetMapping("users/delete")
+    public String deleteUserById(@RequestParam("id") Long id) {
+        userService.deleteUser(id);
+        return "redirect:/users";
+    }
+
+    @GetMapping("users/{id}")
+    public String show(@PathVariable("id") Long id, ModelMap modelMap) {
+        modelMap.addAttribute("user", userService.getUserById(id));
         return "show";
-    }
-
-    @GetMapping("/new")
-    public String addUser(@ModelAttribute("addUser") User user) {
-        return "new";
-    }
-
-    @PostMapping()
-    public String addUserBd(@ModelAttribute("addUser") User user) {
-        userService.save(user);
-        return "redirect:/users";
-    }
-
-    @GetMapping("/{id}/edit")
-    public String edit(@PathVariable("id") int id, ModelMap modelMap) {
-        modelMap.addAttribute("user", userService.show(id));
-        return "edit";
-    }
-
-    @PatchMapping("/{id}")
-    public String update(@ModelAttribute("user") User user) {
-        userService.update(user);
-        return "redirect:/users";
-    }
-
-    @DeleteMapping("/{id}")
-    public String delete(@PathVariable("id") int id) {
-        userService.delete(id);
-        return "redirect:/users";
     }
 }
