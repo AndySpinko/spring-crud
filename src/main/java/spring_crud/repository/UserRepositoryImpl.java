@@ -1,8 +1,6 @@
-package spring_crud.dao;
+package spring_crud.repository;
 
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Repository;
-import org.springframework.transaction.annotation.Transactional;
 import spring_crud.model.User;
 
 
@@ -12,7 +10,7 @@ import java.util.List;
 
 
 @Repository
-public class UserDaoImpl implements UserDao {
+public class UserRepositoryImpl implements UserRepository {
 
     @PersistenceContext
     private EntityManager entityManager;

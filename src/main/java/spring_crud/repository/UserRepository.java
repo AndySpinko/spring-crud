@@ -1,10 +1,10 @@
-package spring_crud.dao;
+package spring_crud.repository;
 
 import spring_crud.model.User;
 
 import java.util.List;
 
-public interface UserDao {
+public interface UserRepository {
 
     void addUser(User user);
 
